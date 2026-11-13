@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFEFA">
+  <meta name="description" content="Portfólio de Thaci, artista 3D generalista para jogos, personagens, criaturas, modelagem e animação.">
+  <title>THACI — Vitrine Criativa | 3D Artist</title>
+  <link rel="icon" href="./assets/favicon.ico" sizes="16x16 32x32 64x64">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./data/portfolio-data.js" defer></script>
+  <script src="./js/app.js" defer></script>
+  <script src="./js/pencil-cursor.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#projetos" data-i18n="skip">Pular para projetos</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="#inicio" aria-label="THACI — início">
+        <img src="./assets/logo-thaci-original.webp" width="674" height="292" alt="THACI" class="brand-logo">
+      </a>
+      <nav id="main-nav" class="main-nav" aria-label="Menu principal">
+        <a class="nav-link" href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a class="nav-link" href="#sobre" data-i18n="nav.about">Sobre mim</a>
+        <a class="nav-link" href="#trajetoria" data-i18n="nav.journey">Trajetória</a>
+        <a class="nav-link" href="#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Switch language to English" title="Switch language to English"><span id="language-pt" class="lang-current">PT</span><span class="lang-divider">/</span><span id="language-en">EN</span></button>
+        <button type="button" class="mobile-menu-button" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="site-main">
+    <section class="hero hero-marquee" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-center-card">
+        <div class="hero-content">
+          <div class="hero-kicker"><span class="hero-kicker-line"></span><span data-i18n="hero.eyebrow">QUE BOM TER VOCÊ AQUI!</span></div>
+          <h1 id="hero-title"><span data-i18n="hero.title1">Bem-vindo à minha</span><br><em data-i18n="hero.title2">vitrine criativa!</em><span class="hero-butterfly" aria-hidden="true"><svg viewBox="0 0 120 120" class="hero-butterfly-svg" xmlns="http://www.w3.org/2000/svg"><g class="wing wing-left wing-left-top"><path d="M58 55C47 28 25 18 14 30C5 41 9 63 28 68C42 72 52 66 58 58Z" fill="#FFD55D" stroke="#2E2E2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><g class="wing wing-left wing-left-bottom"><path d="M56 62C43 74 24 84 20 101C16 118 31 121 44 112C53 106 58 95 60 84Z" fill="#B9E9A3" stroke="#2E2E2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><g class="wing wing-right wing-right-top"><path d="M62 55C73 28 95 18 106 30C115 41 111 63 92 68C78 72 68 66 62 58Z" fill="#FF9E70" stroke="#2E2E2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><g class="wing wing-right wing-right-bottom"><path d="M64 62C77 74 96 84 100 101C104 118 89 121 76 112C67 106 62 95 60 84Z" fill="#C9E8FF" stroke="#2E2E2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M58 41C58 36 62 36 62 41L66 80C66 90 54 90 54 80Z" fill="#6D4A32" stroke="#2E2E2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M58 41C52 32 45 25 36 20M62 41C68 32 75 25 84 20" fill="none" stroke="#2E2E2E" stroke-width="3" stroke-linecap="round"/></svg></span></h1>
+          <p class="hero-intro" data-i18n="hero.intro">Oi, eu sou a Thaci. Sou generalista 3D e trabalho com concept art, modelagem, texturização e animação, com foco em jogos.</p>
+        </div>
+      </div>
+      <div class="hero-image-marquee" aria-label="Uma seleção de objetos 3D do meu portfólio">
+        <div class="hero-image-track" aria-hidden="true">
+          <div class="hero-image-group">
+            <span class="marquee-cluster"><img class="marquee-tree" src="assets/hero-carousel/crystal-tree.webp" alt=""><img class="marquee-jewel" src="assets/hero-carousel/jewel-one.webp" alt=""><img class="marquee-jewel marquee-jewel-small" src="assets/hero-carousel/jewel-two.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-owl" src="assets/hero-carousel/owl-perch.webp" alt=""><img class="marquee-bookshelf" src="assets/hero-carousel/bookshelf.webp" alt=""><img class="marquee-cage" src="assets/hero-carousel/owl-cage.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-seahorse" src="assets/hero-carousel/seahorse.webp" alt=""><img class="marquee-shoes" src="assets/hero-carousel/purple-shoes.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-closet" src="assets/hero-carousel/closet.webp" alt=""><img class="marquee-wheel" src="assets/hero-carousel/ferris-wheel.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-blaster" src="assets/hero-carousel/blaster.webp" alt=""><img class="marquee-drink" src="assets/hero-carousel/drink-machine.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-sofa" src="assets/hero-carousel/sofa.webp" alt=""><img class="marquee-mushroom" src="assets/hero-carousel/mushroom.webp" alt=""></span>
+          </div>
+          <div class="hero-image-group">
+            <span class="marquee-cluster"><img class="marquee-tree" src="assets/hero-carousel/crystal-tree.webp" alt=""><img class="marquee-jewel" src="assets/hero-carousel/jewel-one.webp" alt=""><img class="marquee-jewel marquee-jewel-small" src="assets/hero-carousel/jewel-two.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-owl" src="assets/hero-carousel/owl-perch.webp" alt=""><img class="marquee-bookshelf" src="assets/hero-carousel/bookshelf.webp" alt=""><img class="marquee-cage" src="assets/hero-carousel/owl-cage.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-seahorse" src="assets/hero-carousel/seahorse.webp" alt=""><img class="marquee-shoes" src="assets/hero-carousel/purple-shoes.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-closet" src="assets/hero-carousel/closet.webp" alt=""><img class="marquee-wheel" src="assets/hero-carousel/ferris-wheel.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-blaster" src="assets/hero-carousel/blaster.webp" alt=""><img class="marquee-drink" src="assets/hero-carousel/drink-machine.webp" alt=""></span>
+            <span class="marquee-cluster"><img class="marquee-sofa" src="assets/hero-carousel/sofa.webp" alt=""><img class="marquee-mushroom" src="assets/hero-carousel/mushroom.webp" alt=""></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading projects-heading">
+          <div><p class="section-number">01 / <span data-i18n="sections.projects.kicker">PORTFÓLIO</span></p><h2 id="projects-title" data-i18n="sections.projects.title">Meus projetos<span class="title-dot">.</span></h2></div>
+          <p class="section-caption" data-i18n="sections.projects.subtitle">Uma coleção de ideias que viraram pixels, polígonos e histórias.</p>
+        </div>
+        <div id="project-filters" class="filters" role="group" aria-label="Filtrar projetos"></div>
+        <div id="project-grid" class="projects-grid" aria-live="polite"></div>
+        <div id="project-empty" class="empty-projects" hidden></div>
+        <div class="projects-more-wrap"><button id="project-more-toggle" class="project-more-button" type="button" hidden aria-controls="project-grid" aria-expanded="false"></button></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre" aria-labelledby="about-title">
+      <div class="container about-container">
+        <div class="about-grid">
+          <div class="about-photo-wrap"><div class="about-photo photo-slot" id="about-photo"><div class="slot-inner"><span class="slot-overline" data-i18n="photo.label">ESPAÇO PARA FOTO</span><span class="slot-caption" data-i18n="photo.about">Uma foto minha por aqui</span></div></div><span class="about-photo-shape" aria-hidden="true"></span><span class="portrait-butterfly-trail" aria-hidden="true"></span><div class="portrait-butterfly" aria-hidden="true"><svg class="portrait-butterfly-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g class="wing wing-left wing-left-top"><path d="M58 55C47 28 25 18 14 30C5 41 9 63 28 68C42 72 52 66 58 58Z" fill="#C4B7F0" stroke="#3A3432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 38Q37 43 37 51" fill="none" stroke="#F8E5FF" stroke-width="3" stroke-linecap="round"/></g>
+  <g class="wing wing-left wing-left-bottom"><path d="M56 62C43 74 24 84 20 101C16 118 31 121 44 112C53 106 58 95 60 84Z" fill="#FFD66E" stroke="#3A3432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g class="wing wing-right wing-right-top"><path d="M62 55C73 28 95 18 106 30C115 41 111 63 92 68C78 72 68 66 62 58Z" fill="#F6BBC8" stroke="#3A3432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M87 36Q80 43 81 50" fill="none" stroke="#FFF1F1" stroke-width="3" stroke-linecap="round"/></g>
+  <g class="wing wing-right wing-right-bottom"><path d="M64 62C77 74 96 84 100 101C104 118 89 121 76 112C67 106 62 95 60 84Z" fill="#B9E9A3" stroke="#3A3432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path d="M58 41C58 36 62 36 62 41L66 80C66 90 54 90 54 80Z" fill="#665247" stroke="#3A3432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58 41C52 31 46 27 37 22M62 41C68 31 74 27 83 22" fill="none" stroke="#3A3432" stroke-width="3" stroke-linecap="round"/>
+</svg></div></div>
+          <div class="about-copy">
+            <p class="section-number">02 / <span data-i18n="sections.about.kicker">POR TRÁS DOS POLÍGONOS</span></p>
+            <h2 id="about-title" data-i18n="sections.about.title">Oi, eu sou a <span class="accent">Thaci!</span></h2>
+            <p data-i18n="about.p1">Sou artista 3D generalista, apaixonada por transformar ideias em personagens, criaturas e mundos que ganham vida nos jogos.</p>
+            <p data-i18n="about.p2">Meu trabalho passa por diferentes etapas do processo criativo, desde concept art e modelagem até texturização, rigging e animação. Gosto especialmente de explorar formas, expressões e personalidades através da escultura digital.</p>
+            <p class="about-strong" data-i18n="about.p3">Mas minha criatividade não fica só na tela!</p>
+            <p data-i18n="about.p4">Nas horas vagas, adoro experimentar outras formas de arte, como esculturas em porcelana fria, bordado russo e pinturas em aquarela e acrílica. Também gosto de passear com meus cachorros e aproveitar um bom dia de praia.</p>
+            <p data-i18n="about.p5">Acredito que cada experiência, material e técnica traz uma nova maneira de enxergar o mundo e acaba inspirando também o que crio em 3D.</p>
+          </div>
+        </div>
+        <div class="subsection-header"><h3 data-i18n="hobbies.title">Quando não estou criando polígonos...</h3><span class="subsection-note" data-i18n="hobbies.note">PEQUENAS ALEGRIAS FORA DA TELA</span></div>
+        <div id="hobbies-grid" class="hobbies-grid"></div>
+        <div class="subsection-header software-heading"><h3 data-i18n="tools.title">Minha caixa de ferramentas</h3><span class="subsection-note" data-i18n="tools.note">ONDE A MÁGICA ACONTECE</span></div>
+        <div id="software-grid" class="software-grid"></div>
+      </div>
+    </section>
+
+    <section class="journey-section" id="trajetoria" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-heading journey-heading">
+          <div><p class="section-number">03 / <span data-i18n="sections.journey.kicker">EXPERIÊNCIAS</span></p><div class="section-title-art journey-title-art"><h2 id="journey-title" data-i18n="sections.journey.title">Meu caminho até aqui<span class="title-dot">.</span></h2><span class="section-doodle cart-doodle career-mascot" aria-hidden="true"><img src="assets/illustrations/vr-gamepad-girl.webp" alt=""></span></div><p class="section-caption" data-i18n="sections.journey.subtitle">Clique ou toque nas cartas para descobrir o outro lado.</p></div>
+        </div>
+        <div class="career-scroll" aria-label="Experiências profissionais"><div id="career-grid" class="career-grid"></div></div>
+        <p class="career-instruction" data-i18n="career.instruction">Toque nas cartas para virar. No celular, deslize para ver as cinco.</p>
+      </div>
+    </section>
+
+    <section class="education-section" id="formacao" aria-labelledby="education-title">
+      <div class="container">
+        <p class="section-number">04 / <span data-i18n="sections.education.kicker">APRENDIZADO CONTÍNUO</span></p>
+        <div class="section-title-art education-title-art"><h2 id="education-title" data-i18n="sections.education.title">Sempre aprendendo<span class="title-dot">.</span></h2><span class="section-doodle cap-doodle" aria-hidden="true"><img class="sprite-icon sprite-icon--graduate" src="assets/illustrations/learning-awards-sprites.webp" alt=""></span></div>
+        <div class="education-grid" id="education-grid"></div>
+        <div class="subsection-header awards-heading"><div class="awards-title-art"><h3 data-i18n="awards.title">Destaques &amp; Prêmios</h3><span class="section-doodle trophy-doodle" aria-hidden="true"><img class="sprite-icon sprite-icon--trophy" src="assets/illustrations/learning-awards-sprites.webp" alt=""></span></div><span class="subsection-note" data-i18n="awards.note">MOMENTOS ESPECIAIS</span></div>
+        <div id="awards-grid" class="awards-grid"></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <p class="section-number">05 / <span data-i18n="sections.contact.kicker">CONTATO</span></p>
+        <h2 id="contact-title"><span data-i18n="contact.title1">Tem uma ideia maluca?</span><br><span data-i18n="contact.title2">Vamos dar vida a ela!</span></h2>
+        <p class="contact-text" data-i18n="contact.subtitle">Curtiu meu trabalho? Vamos conversar sobre um projeto, uma colaboração ou uma ideia nova.</p>
+        <div id="contact-cta"></div>
+        <div class="social-links" id="social-links" aria-label="Redes sociais"></div>
+        <div class="contact-links" id="contact-links"></div>
+        <div class="footer-bottom"><a href="#inicio" aria-label="THACI — voltar ao início"><img class="footer-logo" src="./assets/logo-thaci-original.webp" alt="THACI" width="674" height="292"></a><span data-i18n="footer.made">Feito com carinho e muitos polígonos.</span><span>© <span id="current-year">2026</span> THACI</span></div>
+      </div>
+    </section>
+  </main>
+
+  <main id="project-page" class="detail-page" hidden aria-labelledby="detail-title">
+    <div class="container detail-container">
+      <button type="button" class="back-button" id="back-to-projects"><span aria-hidden="true">←</span><span data-i18n="detail.back">Voltar aos projetos</span></button>
+      <div id="project-detail-content"></div>
+      <div class="detail-bottom"><button type="button" class="secondary-button" id="back-bottom"><span aria-hidden="true">←</span><span data-i18n="detail.back">Voltar aos projetos</span></button></div>
+    </div>
+  </main>
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <script>document.getElementById('current-year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
